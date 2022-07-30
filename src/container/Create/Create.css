@@ -1,0 +1,199 @@
+.app__create {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+.app__create-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin: 0 1.5rem 0 0;
+}
+.app__create-left .app__create-left_main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.app__create-left_main .left__main_1 {
+    position: relative;
+}
+.app__create-left_main .left__main_1 .create__nft {
+    width: 300px;
+    height: 300px;
+    border-radius: 12px;
+}
+.app__create-left_main .left__main_1 .profil {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    outline: none;
+    position: absolute;
+    bottom: -10%;
+    right: -10%;
+}
+.app__create-left_main .left__main_2 .profil {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    position: absolute;
+    bottom: -10%;
+    right: -10%;
+}
+.app__create-left_main .left__main_2 {
+    position: relative;
+    margin-top: 4rem;
+}
+.app__create-left_main .left__main_2 .create__nft {
+    width: 200px;
+    height: 214px;
+    border-radius: 12px;
+}
+.app__create-left_child {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 4rem;
+}
+.app__create-left_child .create__nft {
+    width: 240px;
+    height: 265px;
+    border-radius: 12px;
+}
+.app__create-left_child .profil {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    outline: none;
+    position: absolute;
+    bottom: -10%;
+    right: -10%;
+}
+
+.app__create-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0 0 0 1.5rem;
+}
+.app__create-right .h1__font2 {
+    font-size: 32px;
+    width: 80%;
+    margin-bottom: 1rem;
+}
+.app__create-right p {
+    font-size: 18px;
+}
+.app__create-right button {
+    margin-left: 0;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 1150px) {
+    .app__create {
+        flex-direction: column;
+    }
+    .app__create-right {
+        margin-top: 4rem;
+        margin-left: 0;
+    }
+    .app__create-left {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__create-left_main {
+        width: 100%;
+    }
+    .app__create-left_main .left__main_1 {
+        width: 90%;
+    }
+    .app__create-left_main .left__main_1 .create__nft {
+        width: 100%;
+        height: 200px;
+        border-radius: 12px;
+    }
+    .app__create-left_main .left__main_2 {
+        width: 70%;
+    }
+    .app__create-left_main .left__main_2 .create__nft {
+        width: 100%;
+        height: 154px;
+        border-radius: 12px;
+    }
+    .app__create-left_child {
+        margin-left: 4rem;
+        width: 90%;
+    }
+    .app__create-left_child .create__nft {
+        width: 100%;
+        height: 185px;
+        border-radius: 12px;
+    }
+    .app__create-left_main .left__main_1 .profil {
+        width: 80px;
+        height: 80px;
+    }
+    .app__create-left_main .left__main_2 .profil {
+        width: 50px;
+        height: 50px;
+    }
+    .app__create-left_child .profil {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .app__create-left_main .left__main_1 .create__nft {
+        width: 100%;
+        height: 154px;
+    }
+    .app__create-left_main .left__main_2 .create__nft {
+        width: 100%;
+        height: 124px;
+    }
+    .app__create-left_child .create__nft {
+        width: 100%;
+        height: 155px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .app__create-left_main .left__main_1 .create__nft {
+        width: 100%;
+        height: 124px;
+    }
+    .app__create-left_main .left__main_2 .create__nft {
+        width: 100%;
+        height: 104px;
+    }
+    .app__create-left_child .create__nft {
+        width: 100%;
+        height: 145px;
+    }
+    .app__create-left_child {
+        margin-left: 2rem;
+        width: 90%;
+    }
+    .app__create-left_main .left__main_1 .profil {
+        width: 50px;
+        height: 50px;
+    }
+    .app__create-left_main .left__main_2 .profil {
+        width: 40px;
+        height: 40px;
+    }
+    .app__create-right .h1__font2 {
+        font-size: 24px;
+        width: 100%;
+    }
+}

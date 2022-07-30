@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@font-face {
+  font-family: "IntegralCF-Bold";
+  src: local("IntegralCF-Bold"),
+  url("./fonts/integral/IntegralCF-Bold.otf") format("opentype");
+  font-weight: bold;
+  }
+  
+:root {
+  --font-base : 'DM Sans', sans-serif ;
+  --font-base2 : 'IntegralCF-Bold';
+  --color-purple : #3D00B7 ;
+  --color-brown  : #565656 ;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+a {
+  color: unset;
+  text-decoration: none;
+}
+.slide-bottom {
+  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-bottom 0.5s cubic-bezier(0.250, 0.560, 0.450,0.940) both;
+}
+
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}

@@ -1,0 +1,164 @@
+.app__discover {
+    background: rgba(217, 224, 236, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+.app__discover .app__discover-head h1 {
+    font-size: 34px;
+}
+.app__discover .app__discover-head ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+.app__discover .app__discover-head ul li {
+    font-family: var(--font-base);
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 100px;
+    background: rgba(220, 220, 220, 0.2);
+    margin: 0 20px 0 0;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+.app__discover .app__discover-head ul .color__purple {
+    background: var(--color-purple);
+    color: #fff;
+}
+.app__discover .app__discover-head ul li:hover {
+    background: var(--color-purple);
+    color: #fff;
+}
+.app__discover-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-column-gap: 16px;
+    grid-row-gap: 20px;
+    margin-top: 15px;
+    justify-content: center;
+    width: 100%;
+}
+.app__discover_card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 13px;
+    padding: 10px;
+    background: #fff;
+    margin-top: 2rem;
+}
+.app__discover_card_head {
+    position: relative;
+}
+.app__discover_card_head .nft__images {
+    width: 100%;
+    height: 223px;
+    border-radius: 12px;
+}
+.app__discover_card_head .profil_1 {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    z-index: 3;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+}
+.app__discover_card_head .profil_2 {
+    position: absolute;
+    bottom: 0;
+    left: 12%;
+    z-index: 5;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+}
+.app__discover_card_head .profil_3 {
+    position: absolute;
+    bottom: 0;
+    left: 19%;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+}
+.app__discover_card_head .profil_4 {
+    position: absolute;
+    bottom: 0;
+    left: 27%;
+    z-index: 15;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+}
+.app__discover_card_description {
+    margin-top: 1rem;
+    padding-bottom: .5rem;
+}
+.app__discover_card_description h1 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.app__discover_card_description .description_bid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.app__discover_card_description .description_bid .bid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.app__discover_card_description .description_bid .bid p {
+    font-size: 11px;
+    color: #00AC4F;
+    margin-left: 5px;
+}
+.app__discover_card_description .description_bid .bid img {
+    width: 9px;
+    height: 15.5;
+}
+.app__discover_card_description .description_bid .amount {
+    font-size: 13px;
+}
+.app__discover_card_times {
+    display: flex;
+    justify-content: space-between;
+    padding-top: .5rem;
+    border-top: 2px solid #F4F4F4;
+    align-items: center;
+}
+.app__discover_card_times p {
+    padding: 3px 10px;
+    border-radius: 15px;
+    background: #F5F5F5;
+    font-size: 11px;
+    color: #5539A8;
+}
+.app__discover_card_times a {
+    font-family: var(--font-base);
+    font-size: 16px;
+    color: #5539A8;
+    transition: all ease 0.5s;
+}
+.app__discover_card_times a:hover {
+    color: rgba(79, 51, 163, 0.5);
+}
+.app__discover .app__discover-button {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 0 0;
+}
+
+@media screen and (max-width: 1150px) {
+    .app__discover .app__discover-head ul {
+        display: none;
+    }
+}

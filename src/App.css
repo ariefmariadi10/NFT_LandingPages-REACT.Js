@@ -1,0 +1,69 @@
+.section__padding {
+  padding: 2rem 4rem;
+}
+.flex__center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.p__font1 {
+  font-family: var(--font-base);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  color: #565656;
+}
+.h1__font2 {
+  font-family: var(--font-base2);
+}
+.h2__font1 {
+  font-family: var(--font-base);
+  font-size: 20px;
+  font-weight: 600;
+  transition: all ease 0.5s;
+}
+.button_1 {
+  font-family: var(--font-base);
+  color: #fff;
+  background: var(--color-purple);
+  padding: 15px 40px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 30px;
+  margin: 0 10px;
+  transition: all ease 0.5s;
+}
+.button_1:hover {
+  background: none;
+  border:  2px solid var(--color-purple);
+  padding: 13px 40px;
+  color: var(--color-purple);
+}
+.button_2 {
+  font-family: var(--font-base);
+  color: var(--color-purple);
+  background: none;
+  padding: 13px 30px;
+  font-size: 14px;
+  border: 2px solid var(--color-purple);
+  outline: none;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all ease 0.5s;
+}
+.button_2:hover {
+  color: #fff;
+  background: var(--color-purple);
+  border: none;
+  padding: 15px 30px;
+}
+
+@media screen and (max-width: 450px) {
+  .section__padding {
+    padding: 4rem 2rem;
+  }
+}
+
